@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/styles8ca58.css" type="text/css" />
 
     <!-- Meta Pixel Code -->
-    <!-- <script>
+    <script>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
@@ -31,16 +31,16 @@
         t.async = !0;
         t.src = v;
         s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
+        // s.parentNode.insertBefore(t, s);
       })(
         window,
         document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
+        "script"
+        // "https://connect.facebook.net/en_US/fbevents.js"
       );
       fbq("init", "842341057699603");
       fbq("track", "PageView");
-    </script> -->
+    </script>
     <!-- <noscript><img height="1" width="1" style="display:none"
         src="https://kostiumchyk.storeshop.website/o__www.facebook.com/tr?id=842341057699603&amp;ev=PageView&amp;noscript=1" /></noscript> -->
     <!-- End Meta Pixel Code -->
@@ -655,9 +655,9 @@
 
             <select class="field" id="select" name="size" required="">
               <option value="" selected="" disabled="">Оберіть розмір</option>
-              <option value="104">104 (4 роки)</option>
-              <option value="110">110 (5 років)</option>
-              <option value="116">116 (6 років)</option>
+              <option value="104 (4 роки)">104 (4 роки)</option>
+              <option value="110 (5 років)">110 (5 років)</option>
+              <option value="116 (6 років)">116 (6 років)</option>
               <option value="КОНСУЛЬТАЦІЯ ПО РОЗМІРУ">
                 КОНСУЛЬТАЦІЯ ПО РОЗМІРУ
               </option>
@@ -666,6 +666,7 @@
             <input
               class="field"
               type="text"
+              id="name"
               name="name"
               placeholder="Введіть Ваше і'мя"
               required=""
@@ -673,6 +674,7 @@
             <input
               class="field phone"
               type="tel"
+              id="phone"
               name="phone"
               placeholder="Введіть Ваш телефон"
               required=""
