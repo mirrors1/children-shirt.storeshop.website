@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/styles8ca58.css" type="text/css" />
 
     <!-- Meta Pixel Code -->
-    <script>
+    <!-- <script>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
@@ -40,12 +40,12 @@
       );
       fbq("init", "842341057699603");
       fbq("track", "PageView");
-    </script>
+    </script> -->
     <!-- <noscript><img height="1" width="1" style="display:none"
         src="https://kostiumchyk.storeshop.website/o__www.facebook.com/tr?id=842341057699603&amp;ev=PageView&amp;noscript=1" /></noscript> -->
     <!-- End Meta Pixel Code -->
     <style>
-      .button {
+      /* .button {
         display: block;
         margin: 10px auto;
         width: 350px;
@@ -66,7 +66,7 @@
         text-decoration: none;
         text-align: center;
         cursor: pointer;
-      }
+      } */
       .offer_section .field {
         display: block;
         margin: 0 auto 20px;
@@ -164,7 +164,7 @@
             </div>
           </div>
         </div>
-        <a href="index.html#order_form" rel="1" class="button zakaz"
+        <a href="./index.html#order_form_new" rel="1" class="button zakaz"
           >Оформити замовлення</a
         >
 
@@ -414,7 +414,7 @@
       <div class="order_steps1">
         <div class="step_item">
           <div class="step_wrapper">
-            <img src="images/order_steps__step1_icon15b1b.png" alt="" />
+            <img src="./images/order_steps__step1_icon15b1b.png" alt="" />
 
             <h4>Заявка</h4>
             <p>Залишіть заявку внизу сайту</p>
@@ -422,7 +422,7 @@
         </div>
         <div class="step_item">
           <div class="step_wrapper">
-            <img src="images/order_steps__step2_icon95bea.png" alt="" />
+            <img src="./images/order_steps__step2_icon95bea.png" alt="" />
 
             <h4>Дзвінок</h4>
             <p>Наш менеджер уточнить деталі замовлення</p>
@@ -430,7 +430,7 @@
         </div>
         <div class="step_item">
           <div class="step_wrapper">
-            <img src="images/order_steps__step3_icon9469b.png" alt="" />
+            <img src="./images/order_steps__step3_icon9469b.png" alt="" />
 
             <h4>Відправка</h4>
             <p>Доставимо ваше замовлення Новою Поштою</p>
@@ -438,7 +438,7 @@
         </div>
         <div class="step_item">
           <div class="step_wrapper">
-            <img src="images/order_steps__step4_icone6b9d.png" alt="" />
+            <img src="./images/order_steps__step4_icone6b9d.png" alt="" />
 
             <h4>Отримання</h4>
             <p>Оплачуєте при отриманні</p>
@@ -549,12 +549,7 @@
             ДЛЯ ЗАМОВЛЕННЯ І КОНСУЛЬТАЦІЇ <br />ЗАПОВНІТЬ ФОРМУ ПРЯМО ЗАРАЗ:
           </p>
           <br />
-          <form
-            id="order_form"
-            class="order_form"
-            action="https://kostiumchyk.storeshop.website/order.php"
-            method="post"
-          >
+          <form id="order_form_new" class="order_form_new">
             <input
               type="hidden"
               name="product"
@@ -562,23 +557,23 @@
               value="Дитяча сорочка"
               hidden="hidden"
             />
-            <input
+            <!-- <input
               type="hidden"
               name="product_id"
               id="product_id"
               value="207"
               hidden="hidden"
-            />
+            /> -->
             <input
               type="hidden"
               name="product_price"
               id="product_price"
-              value="699"
+              value="520"
               hidden="hidden"
             />
             <input type="hidden" name="count" value="1" />
-            <input type="hidden" name="servername" value="/" />
-            <input type="hidden" name="type" value="offer" />
+            <!-- <input type="hidden" name="servername" value="/" />
+            <input type="hidden" name="type" value="offer" /> -->
 
             <!-- <select class="field" id="select" name="color" required="">
                   <option value="" selected="" disabled="">Оберіть колір</option>
@@ -614,7 +609,7 @@
               placeholder="Введіть Ваш телефон"
               required=""
             />
-            <button class="button">Оформити замовлення</button>
+            <button class="button" type="submit">Оформити замовлення</button>
           </form>
           <div class="products_count">Залишилось <b>5</b> одиниць по акції</div>
         </div>
@@ -646,6 +641,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic"
       rel="stylesheet"
     />
+    <script src="./js/sendtg.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery.bxslider.js"></script>
     <link href="./css/jquery.bxslider.css" rel="stylesheet" />

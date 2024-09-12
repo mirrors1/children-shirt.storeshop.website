@@ -39,19 +39,19 @@ $(document).ready(function() {
 	
 	/* validate form */
 
-	$(".order_form").submit(function(){
+	$(".order_form_new").submit(function(){
 		if ($(this).find("input[name='name']").val() == "" && $(this).find("input[name='phone']").val() == "") {
-			alert("Введите Ваши имя и телефон");
+			alert("Введіть Ваше ім'я та телефон");
 			$(this).find("input[name='name']").focus();
 			return false;
 		}
 		else if ($(this).find("input[name='name']").val() == "") {
-			alert("Введите Ваше имя");
+			alert("Введіть Ваше ім'я");
 			$(this).find("input[name='name']").focus();
 			return false;
 		}
 		else if ($(this).find("input[name='phone']").val() == "") {
-			alert("Введите Ваш телефон");
+			alert("Введіть Ваш телефон");
 			$(this).find("input[name='phone']").focus();
 			return false;
 		}

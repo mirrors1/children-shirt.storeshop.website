@@ -40,10 +40,10 @@ ol {
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   border-radius: 40px;
-  background: #4267b2;
+  background-color: #ff0000;
   -webkit-box-shadow: 0 0 0 10px rgba(99, 140, 215, 0.3);
   -moz-box-shadow: 0 0 0 10px rgba(99, 140, 215, 0.3);
-  box-shadow: 0 0 0 10px rgba(99, 140, 215, 0.3);
+  box-shadow: 0 0 0 10px rgb(215 99 99 / 30%);
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -52,6 +52,10 @@ ol {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: #c40000;
 }
 /* section */
 section {
