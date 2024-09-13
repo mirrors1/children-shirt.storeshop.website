@@ -52,6 +52,9 @@ ol {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  transition-property: background-color;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -2161,4 +2164,24 @@ select::-ms-expand {
 }
 .footer_section a {
   color: #222;
+}
+.address {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.contact-link {
+  font-style: normal;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #434455;
+  transition-property: color;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
 }
