@@ -42,6 +42,7 @@
     <link rel="icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./css/reset4a3c6.css" type="text/css" />
     <link rel="stylesheet" href="./css/styles8ca58.css" type="text/css" />
+    <link rel="stylesheet" href="./css/header.css" type="text/css" />
 
     <!-- Meta Pixel Code -->
     <script>
@@ -117,9 +118,155 @@
   </head>
 
   <body>
+    <!-- header 3 -->
+    <header class="header main_wrapper">
+      <div class="container">
+        <a href="#index.html" class="logo">SKIDKI</a>
+
+        <!-- <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#index.html" class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#about-us" class="navigation__link">About Us</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#catalog" class="navigation__link">Catalog</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#sale" class="navigation__link">Sale</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#reviews" class="navigation__link">Reviews</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#contact-us" class="navigation__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="soc-list">
+          <li class="soc__item">
+            <a
+              href="https://www.facebook.com/goITclub/"
+              class="soc__link"
+              target="_blank"
+            >
+              <svg class="soc__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-tablet-face"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc__item">
+            <a
+              href="https://www.instagram.com/goitclub/"
+              class="soc__link"
+              target="_blank"
+            >
+              <svg class="soc__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-tablet-inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc__item">
+            <a
+              href="https://www.youtube.com/c/GoIT"
+              class="soc__link"
+              target="_blank"
+            >
+              <svg class="soc__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-tablet-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul> -->
+
+        <!-- Mob-menu -->
+
+        <button type="button" class="mob-menu__btn" data-open-menu>
+          <svg class="mob-menu__open">
+            <use
+              href="./images/icons.svg#icon-mobile-menu"
+              class="open-mob"
+            ></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden is-open" data-menu>
+          <button type="button" class="mob-menu__btn" data-close-menu>
+            <svg class="mob-menu__close" width="32" height="32">
+              <use href="./images/icons.svg#icon-mobile-btn"></use>
+            </svg>
+          </button>
+          <div class="menu-container">
+            <nav class="navigation-menu">
+              <ul class="navigation-menu__list">
+                <li class="navigation-menu__item">
+                  <a
+                    href="https://children-jacket.skidki.com.ua/"
+                    class="navigation-menu__link"
+                    >Пуховик</a
+                  >
+                </li>
+                <li class="navigation-menu__item">
+                  <a
+                    href="https://children-shirt.skidki.com.ua/"
+                    class="navigation-menu__link"
+                    >Сорочка</a
+                  >
+                </li>
+                <li class="navigation-menu__item">
+                  <a
+                    href="https://children-shoes.skidki.com.ua/"
+                    class="navigation-menu__link"
+                    >Черевики</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <ul class="soc-list__menu">
+              <li class="soc__item">
+                <a
+                  href="https://www.facebook.com/goITclub/"
+                  class="soc__link"
+                  target="_blank"
+                >
+                  <svg class="soc__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc__item">
+                <a
+                  href="https://www.instagram.com/goitclub/"
+                  class="soc__link"
+                  target="_blank"
+                >
+                  <svg class="soc__icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc__item">
+                <a
+                  href="https://www.youtube.com/c/GoIT"
+                  class="soc__link"
+                  target="_blank"
+                >
+                  <svg class="soc__icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Заголовок -->
     <div class="main_wrapper">
       <!-- header 3 -->
-      <header class="offer_section offer3">
+      <div class="offer_section offer3">
         <h1 class="main_title">Дитяча сорочка</h1>
 
         <div class="info_block">
@@ -214,7 +361,7 @@
         <!-- <a href="index.html#cat" class="button">Обрати сорочку</a> -->
 
         <div class="products_count">Залишилось <b>5</b> одиниць по акції</div>
-      </header>
+      </div>
       <br />
       <div class="catitem">
         <h2 class="title"><span>ЯК СОРОЧКА</span> ВИГЛЯДАЄ ВЖИВУ!</h2>
@@ -742,6 +889,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic"
       rel="stylesheet"
     />
+    <script type="module" src="./js/menu.js"></script>
     <script src="./js/sendtg.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery.bxslider.js"></script>
